@@ -1,4 +1,4 @@
-env_id: HalfCheetahBulletEnv-v0
+env_id: HalfCheetah-v3
 experiment_name: HalfCheetahBullet
 agent_name: SAC
 wandb_key: null

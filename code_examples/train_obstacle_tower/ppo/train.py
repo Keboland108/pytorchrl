@@ -102,7 +102,7 @@ def main():
         while not learner.done():
 
             learner.step()
-
+            print('Step taken')
             if iterations % args.log_interval == 0:
                 log_data = learner.get_metrics(add_episodes_metrics=True)
                 log_data = {k.split("/")[-1]: v for k, v in log_data.items()}

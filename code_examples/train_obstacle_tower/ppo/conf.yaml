@@ -19,7 +19,7 @@ reward_shape: True
 reduced_action_space: True
 use_clipped_value_loss: True
 num_actions: 6
-entropy_coef: 0.01
+entropy_coef: 0.10
 eps: 0.00001
 lr: 0.0004
 feature_extractor_net: Fixup
