@@ -21,6 +21,7 @@ def enjoy():
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
     policy = OffPolicyActor.create_factory(
+        'ppo'
         env.observation_space, env.action_space,
         restart_model=os.path.join(args.log_dir, "model.state_dict"))(device)
 
