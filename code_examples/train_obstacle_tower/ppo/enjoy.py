@@ -14,7 +14,7 @@ def enjoy():
     args = get_args()
 
     # Define single copy of the environment
-    env = obstacle_test_env_factory(
+    env = obstacle_test_env_factory(index_col_worker=1, index_grad_worker=1,
         frame_skip=args.frame_skip, frame_stack=args.frame_stack, realtime=True)
 
     # Define agent device and agent

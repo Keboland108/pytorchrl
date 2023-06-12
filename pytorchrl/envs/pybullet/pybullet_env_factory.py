@@ -1,5 +1,4 @@
 import gym
-import pybullet_envs
 from pytorchrl.envs.common import FrameStack, FrameSkip, DelayedReward
 
 

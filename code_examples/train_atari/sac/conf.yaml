@@ -13,7 +13,7 @@ mini_batch_size: 64
 update_every: 1
 num_updates: 1
 start_steps: 20000 
-buffer_size: 300000
+buffer_size: 50000
 target_update_interval: 8000
 lr: 0.0003
 feature_extractor_net: CNN

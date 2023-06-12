@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import os
-import ray
+#import ray
 import sys
 import time
 import wandb

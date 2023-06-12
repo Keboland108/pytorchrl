@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
+import wandb
+
 import os
-import ray
 import sys
 import time
-import wandb
 import argparse
 
 from pytorchrl.learner import Learner
@@ -13,7 +13,7 @@ from pytorchrl.agent.algorithms import SAC
 from pytorchrl.agent.env import VecEnv
 from pytorchrl.agent.storages import ReplayBuffer, NStepReplayBuffer, PERBuffer, EREBuffer
 from pytorchrl.agent.actors import OffPolicyActor, get_feature_extractor, get_memory_network
-from pytorchrl.envs.obstacle_tower.obstacle_tower_env_factory import obstacle_train_env_factory
+from pytorchrl.envs.obstacle_tower.obstacle_tower_env_factory import obstacle_train_env_factoryRequirement already satisfied: google-auth<3.0dev,>=2.14.1 i
 from pytorchrl.utils import LoadFromFile, save_argparse, cleanup_log_dir
 
 

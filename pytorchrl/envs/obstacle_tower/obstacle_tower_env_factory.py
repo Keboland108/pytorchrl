@@ -63,6 +63,7 @@ def obstacle_train_env_factory(
         exe = os.path.join(os.path.dirname(
             obstacle_tower_env.__file__), 'ObstacleTower/obstacletower')
 
+
     id = id_offset + index_grad_worker * 1000 + 100 * index_col_worker + index_env
     env = ObstacleTowerEnv(
         environment_filename=exe, retro=True, worker_id=id,
@@ -140,8 +141,12 @@ def obstacle_test_env_factory(
     else:
         exe = os.path.join(os.path.dirname(
             obstacle_tower_env.__file__), 'ObstacleTower/obstacletower')
+        
+        #exe = os.path.join(os.path.dirname(
+            #obstacle_tower_env.__file__), 'obstacle_tower_env.py')
 
     id = id_offset + index_grad_worker * 1000 + 100 * index_col_worker + index_env
+    
     env = ObstacleTowerEnv(
         environment_filename=exe, retro=True, worker_id=id,
         greyscale=False, timeout_wait=timeout_wait, realtime_mode=realtime)
