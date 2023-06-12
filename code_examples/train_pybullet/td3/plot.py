@@ -61,5 +61,5 @@ def plot(experiment_path, roll=5, save_name="results"):
 if __name__ == "__main__":
 
     args = get_args()
-    plot(experiment_path=args.log_dir, save_name=args.save_name)
+    plot(experiment_path=args.log_dir)
     quit()
