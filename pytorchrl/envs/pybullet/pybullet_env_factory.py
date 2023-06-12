@@ -44,7 +44,7 @@ def pybullet_train_env_factory(env_id, index_worker=0, index_env=0, seed=0, fram
     return env
 
 
-def pybullet_test_env_factory(env_id, index_worker=0, index_env=0, seed=0, frame_skip=0, frame_stack=1, reward_delay=1):
+def pybullet_test_env_factory(env_id: str, index_worker=0, index_env=0, seed=0, frame_skip=0, frame_stack=1, reward_delay=1):
     """
     Create test PyBullet environment.
 
