@@ -8,7 +8,7 @@ import pytorchrl as prl
 from pytorchrl.envs.atari import atari_test_env_factory
 from pytorchrl.agent.actors import OnPolicyActor, get_feature_extractor
 from pytorchrl.utils import LoadFromFile
-from pytorchrl.agent.env.env_wrappers import TransposeImagesIfRequired
+from pytorchrl.agent.env.base_envs.env_wrappers import TransposeImagesIfRequired
 from code_examples.train_atari.ppo.train import get_args
 
 
